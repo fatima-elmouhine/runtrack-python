@@ -13,11 +13,10 @@ for word in re.findall(r'[a-zA-Z]', text):
        if letter == word[0]:
            arrayWord.append(letter.lower())
 
-# print(sorted(arrayWord))
 # PARTIE HISTOGRAMME
 
 plt.figure(figsize=(12, 5))
-plt.hist(sorted(arrayWord), bins=18, color='orange', edgecolor='black', linewidth=1.4)
+plt.hist(sorted(arrayWord), bins=26, color='orange', edgecolor='black', linewidth=1.4)
 
 plt.gca().yaxis.set_major_formatter(mtick.PercentFormatter(1000000))
 plt.ylabel('Pourcentage (%)')
