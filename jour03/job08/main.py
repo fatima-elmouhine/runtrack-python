@@ -2,9 +2,11 @@
 import matplotlib.pyplot as plt
 import re
 import matplotlib.ticker as mtick
+from os.path import dirname, abspath, join
 
 # PARTIE MOTS
-f = open('data.txt','r')
+f = open(join(dirname(abspath(__file__)), "..", "data.txt"), "r")
+
 text = f.read()
 arrayWord = []
 
