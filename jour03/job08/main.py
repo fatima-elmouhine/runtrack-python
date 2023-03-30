@@ -18,9 +18,9 @@ for word in re.findall(r'[a-zA-Z]', text):
 # PARTIE HISTOGRAMME
 
 plt.figure(figsize=(12, 5))
-plt.hist(sorted(arrayWord), bins=26, color='orange', edgecolor='black', linewidth=1.4)
+plt.hist(sorted(arrayWord), bins=26, density=True, color='orange', edgecolor='black', linewidth=1.4)
 
-plt.gca().yaxis.set_major_formatter(mtick.PercentFormatter(1000000))
+plt.gca().yaxis.set_major_formatter(mtick.PercentFormatter(1))
 plt.ylabel('Pourcentage (%)')
 plt.suptitle('Pourcentage de présence de chaque lettre en début de mot.')
 

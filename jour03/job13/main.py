@@ -10,11 +10,15 @@ text = f.read()
 arrayWord = []
 
 for word in re.findall(r'[a-zA-Z]', text):
-   for letter in word:
-       if letter == word[0]:
-           arrayWord.append(letter.lower())
+    # i = 0
+    # for  letter in word:
+    print(len(word))
+    #    if len(word) > 1:
            
-print(arrayWord)
+            # arrayWord.append(word[1])
+        #    arrayWord.append(letter.lower())
+           
+print(arrayWord[0])
 
 # PARTIE HISTOGRAMME
 
