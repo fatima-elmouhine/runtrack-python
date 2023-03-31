@@ -3,7 +3,7 @@ Personne = file.Personne
 
 class Auteur(Personne):
     def __init__(self, nom,prenom, oeuvre):
-        super().__init__(nom,prenom,)
+        super().__init__(nom,prenom)
         self.oeuvre = oeuvre
     def listerOeuvre(self):
         for i in range(len(self.oeuvre)):
